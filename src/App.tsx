@@ -4,13 +4,11 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Work from './sections/Work'
 import TalentFlow from './sections/TalentFlow'
+import Experience from './sections/Experience'
+import Skills from './sections/Skills'
 import './App.css'
 
-const PLACEHOLDER_SECTIONS = [
-  { id: 'experience', label: 'Experience' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'contact', label: 'Contact' },
-]
+const PLACEHOLDER_SECTIONS = [{ id: 'contact', label: 'Contact' }]
 
 function App() {
   return (
@@ -21,6 +19,8 @@ function App() {
         <About />
         <Work />
         <TalentFlow />
+        <Experience />
+        <Skills />
         {PLACEHOLDER_SECTIONS.map((section) => (
           <section
             key={section.id}
