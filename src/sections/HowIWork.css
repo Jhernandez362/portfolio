@@ -1,0 +1,39 @@
+.how-i-work {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-lg);
+}
+
+.how-i-work__heading {
+  margin: 0 0 var(--space-lg);
+}
+
+.how-i-work__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.how-i-work__card {
+  padding: var(--space-lg);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-bg-elevated);
+}
+
+.how-i-work__card h3 {
+  margin: 0 0 var(--space-sm);
+  color: var(--color-accent);
+  font-size: var(--font-size-base);
+}
+
+.how-i-work__card p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 700px) {
+  .how-i-work__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

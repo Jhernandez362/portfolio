@@ -6,6 +6,7 @@ import Work from './sections/Work'
 import TalentFlow from './sections/TalentFlow'
 import Experience from './sections/Experience'
 import Skills from './sections/Skills'
+import HowIWork from './sections/HowIWork'
 import './App.css'
 
 const PLACEHOLDER_SECTIONS = [{ id: 'contact', label: 'Contact' }]
@@ -21,6 +22,7 @@ function App() {
         <TalentFlow />
         <Experience />
         <Skills />
+        <HowIWork />
         {PLACEHOLDER_SECTIONS.map((section) => (
           <section
             key={section.id}
