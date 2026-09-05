@@ -7,9 +7,7 @@ import TalentFlow from './sections/TalentFlow'
 import Experience from './sections/Experience'
 import Skills from './sections/Skills'
 import HowIWork from './sections/HowIWork'
-import './App.css'
-
-const PLACEHOLDER_SECTIONS = [{ id: 'contact', label: 'Contact' }]
+import Contact from './sections/Contact'
 
 function App() {
   return (
@@ -23,15 +21,7 @@ function App() {
         <Experience />
         <Skills />
         <HowIWork />
-        {PLACEHOLDER_SECTIONS.map((section) => (
-          <section
-            key={section.id}
-            id={section.id}
-            className="placeholder-section"
-          >
-            <h2>{section.label}</h2>
-          </section>
-        ))}
+        <Contact />
       </main>
       <Footer />
     </>

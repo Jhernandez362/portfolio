@@ -7,6 +7,7 @@ export const PROFILE = {
     github: 'https://github.com/Jhernandez362',
     linkedin:
       'https://www.linkedin.com/in/jhohan-daniel-hernandez-velandia-816129232/',
+    email: 'jhernandez362@unab.edu.co',
   },
 }
 
