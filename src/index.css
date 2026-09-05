@@ -1,10 +1,11 @@
 :root {
   /* Colors */
-  --color-bg: #ffffff;
-  --color-text: #1a1a1a;
-  --color-text-muted: #5c5c66;
-  --color-accent: #3b82f6;
-  --color-border: #e2e2e6;
+  --color-bg: #0b0d12;
+  --color-bg-elevated: #12151c;
+  --color-text: #f2f3f5;
+  --color-text-muted: #9aa0ac;
+  --color-accent: #5b9dff;
+  --color-border: #262b36;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -27,6 +28,9 @@
   --font-size-lg: 1.25rem;
   --font-size-xl: 2rem;
   --line-height-base: 1.5;
+
+  /* Layout */
+  --navbar-height: 72px;
 }
 
 *,
@@ -39,6 +43,11 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--navbar-height);
 }
 
 body {
