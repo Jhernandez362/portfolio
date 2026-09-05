@@ -4,7 +4,7 @@ A one-page, responsive developer portfolio built with React, Vite and TypeScript
 
 ## Live Demo
 
-_Pending deployment — this section will be updated with the GitHub Pages URL once the site is published._
+**[jhernandez362.github.io/portfolio](https://jhernandez362.github.io/portfolio/)**
 
 ## About
 
@@ -112,7 +112,7 @@ Built mobile-first using CSS Grid and Flexbox, with breakpoints tuned per sectio
 
 ## Deployment
 
-Not yet deployed. The intended target is **GitHub Pages**; once published, the URL will be added to the [Live Demo](#live-demo) section above.
+Deployed on **GitHub Pages** via GitHub Actions (`.github/workflows/deploy.yml`): every push to `main` builds the project and publishes `dist/` automatically. See the [Live Demo](#live-demo) link above.
 
 ## Git Flow
 
