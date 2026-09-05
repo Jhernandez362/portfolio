@@ -3,6 +3,7 @@ import Footer from './components/Footer'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Work from './sections/Work'
+import TalentFlow from './sections/TalentFlow'
 import './App.css'
 
 const PLACEHOLDER_SECTIONS = [
@@ -19,6 +20,7 @@ function App() {
         <Hero />
         <About />
         <Work />
+        <TalentFlow />
         {PLACEHOLDER_SECTIONS.map((section) => (
           <section
             key={section.id}
