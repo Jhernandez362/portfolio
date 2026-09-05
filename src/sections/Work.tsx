@@ -1,4 +1,5 @@
 import { TRAINING_TILES } from '../data/projects'
+import ProfessionalWork from './ProfessionalWork'
 import './Work.css'
 
 function Work() {
@@ -48,6 +49,8 @@ function Work() {
           </a>
         </div>
       </article>
+
+      <ProfessionalWork />
     </section>
   )
 }

@@ -20,3 +20,31 @@ export const TRAINING_TILES = {
     },
   ],
 }
+
+export const PROFESSIONAL_PROJECTS = [
+  {
+    name: 'Livestock Management',
+    context: 'Mobile and web tooling for livestock management.',
+    contribution:
+      'Maintenance and updates of applications built with Ionic and Angular.',
+    technologies: ['Ionic', 'Angular'],
+  },
+  {
+    name: 'Real Estate Platform',
+    context: 'Real-time platform for property sale and auction.',
+    contribution: 'Flutter development of the mobile and web solution.',
+    technologies: ['Flutter'],
+  },
+  {
+    name: 'Parkinson Assistive Technology',
+    context: "Assistive technology for patients with Parkinson's disease.",
+    contribution:
+      'Development in Flutter and native code, integrating gyroscope input and immersive technologies.',
+    technologies: [
+      'Flutter',
+      'Native code',
+      'Gyroscope',
+      'Immersive technologies',
+    ],
+  },
+]
