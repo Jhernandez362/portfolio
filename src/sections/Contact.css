@@ -1,7 +1,7 @@
 .contact {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--space-2xl) var(--space-lg);
+  padding: var(--section-padding-block) var(--section-padding-inline);
   text-align: center;
 }
 

@@ -1,7 +1,7 @@
 .work {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--space-2xl) var(--space-lg);
+  padding: var(--section-padding-block) var(--section-padding-inline);
 }
 
 .work__heading {
@@ -16,13 +16,13 @@
 
 .project-featured__visual {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--space-sm);
 }
 
 .project-featured__screenshot {
   overflow: hidden;
-  min-height: 140px;
+  aspect-ratio: 4 / 3;
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--border-radius-md);
   background-color: var(--color-bg-elevated);
@@ -36,7 +36,13 @@
 
 .project-featured__screenshot--main {
   grid-column: 1 / -1;
-  min-height: 220px;
+  aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 480px) {
+  .project-featured__visual {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .project-featured__info {

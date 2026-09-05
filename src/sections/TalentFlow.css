@@ -1,7 +1,7 @@
 .talentflow {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--space-2xl) var(--space-lg);
+  padding: var(--section-padding-block) var(--section-padding-inline);
 }
 
 .talentflow__heading {
@@ -74,14 +74,16 @@
 
 .talentflow__step {
   display: flex;
-  min-width: 160px;
+  min-width: 140px;
   flex-direction: column;
   align-items: center;
   gap: var(--space-xs);
-  padding: var(--space-sm) var(--space-md);
+  padding: var(--space-sm);
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--border-radius-md);
   background-color: var(--color-bg);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
   text-align: center;
 }
 
@@ -123,6 +125,7 @@
 
   .talentflow__step-group {
     flex-direction: row;
+    align-items: center;
   }
 
   .talentflow__arrow::after {
