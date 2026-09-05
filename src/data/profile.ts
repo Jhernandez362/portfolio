@@ -9,6 +9,7 @@ export const PROFILE = {
       'https://www.linkedin.com/in/jhohan-daniel-hernandez-velandia-816129232/',
     email: 'jhernandez362@unab.edu.co',
   },
+  cvUrl: `${import.meta.env.BASE_URL}cv.pdf`,
 }
 
 export const ABOUT = {

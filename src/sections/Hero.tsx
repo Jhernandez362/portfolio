@@ -28,7 +28,7 @@ function Hero() {
             GitHub
           </a>
           <a
-            href="/cv.pdf"
+            href={PROFILE.cvUrl}
             className="hero__cta hero__cta--secondary"
             download
           >

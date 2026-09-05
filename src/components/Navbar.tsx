@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { PROFILE } from '../data/profile'
 import './Navbar.css'
 
 const NAV_LINKS = [
@@ -45,7 +46,7 @@ function Navbar() {
           ))}
           <li>
             <a
-              href="/cv.pdf"
+              href={PROFILE.cvUrl}
               className="navbar__cta"
               download
               onClick={closeMenu}

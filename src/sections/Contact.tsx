@@ -33,7 +33,7 @@ function Contact() {
         >
           Email
         </a>
-        <a href="/cv.pdf" className="contact__link" download>
+        <a href={PROFILE.cvUrl} className="contact__link" download>
           Download CV
         </a>
       </div>

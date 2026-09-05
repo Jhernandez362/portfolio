@@ -7,15 +7,15 @@ export const TRAINING_TILES = {
   technologies: ['Unity', 'VR', 'Hand Tracking'],
   screenshots: [
     {
-      src: '/images/training-tiles/training_tiles_1.png',
+      src: `${import.meta.env.BASE_URL}images/training-tiles/training_tiles_1.png`,
       alt: 'TrainingTiles screenshot 1',
     },
     {
-      src: '/images/training-tiles/training_tiles_2.jpg',
+      src: `${import.meta.env.BASE_URL}images/training-tiles/training_tiles_2.jpg`,
       alt: 'TrainingTiles screenshot 2',
     },
     {
-      src: '/images/training-tiles/training_tiles_3.jpg',
+      src: `${import.meta.env.BASE_URL}images/training-tiles/training_tiles_3.jpg`,
       alt: 'TrainingTiles screenshot 3',
     },
   ],
