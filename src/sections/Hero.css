@@ -1,0 +1,96 @@
+.hero {
+  display: grid;
+  gap: var(--space-2xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-lg);
+}
+
+.hero__role {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-accent);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero__name {
+  margin: 0 0 var(--space-md);
+  font-size: var(--font-size-xl);
+  line-height: 1.15;
+}
+
+.hero__tagline {
+  max-width: 40ch;
+  margin: 0 0 var(--space-lg);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+}
+
+.hero__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin: 0 0 var(--space-lg);
+  padding: 0;
+  list-style: none;
+}
+
+.hero__stack li {
+  padding: var(--space-xs) var(--space-sm);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text-muted);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.hero__cta {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero__cta--primary {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.hero__cta--secondary {
+  border: var(--border-width) solid var(--color-border);
+  color: var(--color-text);
+}
+
+.hero__linkedin {
+  display: inline-block;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.hero__visual-placeholder {
+  display: flex;
+  min-height: 240px;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+}

@@ -1,10 +1,10 @@
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Hero from './sections/Hero'
+import About from './sections/About'
 import './App.css'
 
-const SECTIONS = [
-  { id: 'home', label: 'Home' },
-  { id: 'about', label: 'About' },
+const PLACEHOLDER_SECTIONS = [
   { id: 'work', label: 'Work' },
   { id: 'experience', label: 'Experience' },
   { id: 'skills', label: 'Skills' },
@@ -16,7 +16,9 @@ function App() {
     <>
       <Navbar />
       <main>
-        {SECTIONS.map((section) => (
+        <Hero />
+        <About />
+        {PLACEHOLDER_SECTIONS.map((section) => (
           <section
             key={section.id}
             id={section.id}
