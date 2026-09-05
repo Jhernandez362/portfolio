@@ -1,0 +1,75 @@
+:root {
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #5c5c66;
+  --color-accent: #3b82f6;
+  --color-border: #e2e2e6;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+
+  /* Borders */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-width: 1px;
+
+  /* Typography */
+  --font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: ui-monospace, Consolas, monospace;
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+  --line-height-base: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
