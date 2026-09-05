@@ -26,7 +26,7 @@ function Navbar() {
           className="navbar__toggle"
           aria-expanded={isMenuOpen}
           aria-controls="navbar-menu"
-          aria-label="Toggle menu"
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           onClick={() => setIsMenuOpen((open) => !open)}
         >
           <span className="navbar__toggle-icon" aria-hidden="true" />

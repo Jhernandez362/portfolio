@@ -18,7 +18,13 @@ function Work() {
                   : 'project-featured__screenshot'
               }
             >
-              <img src={screenshot.src} alt={screenshot.alt} loading="lazy" />
+              <img
+                src={screenshot.src}
+                alt={screenshot.alt}
+                width={index === 0 ? 1280 : 960}
+                height={index === 0 ? 720 : 720}
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
