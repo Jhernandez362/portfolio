@@ -13,8 +13,24 @@ export const PROFILE = {
 }
 
 export const ABOUT = {
-  bio: "I'm a developer with experience across web, mobile, game and immersive technologies. I'm currently expanding my profile toward modern full-stack development and automation.",
-  focusAreas: ['Web', 'Mobile', 'XR / VR'],
+  bio: "I'm a software developer with experience across web, mobile, game development and immersive technologies. I'm currently expanding my profile toward modern full-stack development and automation.",
+  focusAreas: [
+    {
+      title: 'Web',
+      description: 'Modern web applications',
+      stack: ['React', 'Angular', 'TypeScript'],
+    },
+    {
+      title: 'Mobile',
+      description: 'Cross-platform applications',
+      stack: ['Flutter', 'Dart'],
+    },
+    {
+      title: 'XR / VR',
+      description: 'Immersive experiences',
+      stack: ['Unity', 'VR', 'Hand Tracking'],
+    },
+  ],
   languages: [
     { name: 'English', level: 'B2' },
     { name: 'Japanese', level: 'A2' },

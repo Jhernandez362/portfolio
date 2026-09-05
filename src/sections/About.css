@@ -29,10 +29,23 @@
 }
 
 .about__card {
-  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-md);
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--border-radius-md);
   background-color: var(--color-bg-elevated);
+}
+
+.about__card-icon {
+  display: inline-flex;
+  color: var(--color-accent);
+}
+
+.about__card-icon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .about__card h3 {
@@ -41,8 +54,21 @@
   font-size: var(--font-size-base);
 }
 
+.about__card-description {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+}
+
+.about__card-stack {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+}
+
 .about__card--languages ul {
-  margin: var(--space-sm) 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
   color: var(--color-text-muted);

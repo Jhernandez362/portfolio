@@ -46,8 +46,13 @@ function Hero() {
         </a>
       </div>
 
-      <div className="hero__visual-placeholder">
-        <p>Photo placeholder</p>
+      <div className="hero__visual">
+        <img
+          src={`${import.meta.env.BASE_URL}images/profile.png`}
+          alt={PROFILE.name}
+          width={800}
+          height={1000}
+        />
       </div>
     </section>
   )
